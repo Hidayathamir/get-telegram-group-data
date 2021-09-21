@@ -47,9 +47,12 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
         "minute_utc",
         "second_utc",
     ]
-    df[str_columns] = df[str_columns].fillna("")
-    df.text = df.text.apply(lambda x: x.replace("\n", "\\n"))
-    df[int_columns] = df[int_columns].fillna(0.0).astype(int)
+    try:
+        df[str_columns] = df[str_columns].fillna("")
+        df.text = df.text.apply(lambda x: x.replace("\n", "\\n"))
+        df[int_columns] = df[int_columns].fillna(0.0).astype(int)
+    except KeyError:
+        pass
     return df
 
 
@@ -78,29 +81,31 @@ def main(
     session_name: str,
     api_id: int,
     api_hash: str,
-    target_username: str,
+    group_link: str,
     min_id: int,
     max_id: int,
 ) -> None:
+    group_link = group_link.split("/")[-1]
     client = TelegramClient(session_name, api_id, api_hash)
     with client:
         df = client.loop.run_until_complete(
-            iter_messages(client, target_username, min_id, max_id)
+            iter_messages(client, group_link, min_id, max_id)
         )
 
-    csv_name = f"{target_username}-{min_id}-{max_id}.csv"
+    csv_name = f"{group_link}-{min_id}-{max_id}.csv"
     df.to_csv(csv_name, index=False)
 
 
 if __name__ == "__main__":
+    # Example how to run main
     with open("my_yaml.yaml", "r") as yaml_file:
         environ = yaml.safe_load(yaml_file)
 
     main(
-        session_name=environ["session"],
+        session_name="core1",
         api_id=environ["api_id"],
         api_hash=environ["api_hash"],
-        target_username="pythonID",
+        group_link="https://t.me/pythonID",
         min_id=2123,
         max_id=2142,
     )
