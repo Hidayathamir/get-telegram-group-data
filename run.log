@@ -1,0 +1,101 @@
+2021-09-21 21:08:43,946 - main - INFO - (core1) Start task id 0 - id 58624.
+2021-09-21 21:08:43,948 - telethon.network.mtprotosender - INFO - Connecting to 91.108.56.159:443/TcpFull...
+2021-09-21 21:08:43,948 - main - INFO - (core2) Start task id 58625 - id 117249.
+2021-09-21 21:08:43,951 - telethon.network.mtprotosender - INFO - Connecting to 91.108.56.159:443/TcpFull...
+2021-09-21 21:08:43,953 - main - INFO - (core3) Start task id 117250 - id 175874.
+2021-09-21 21:08:43,954 - telethon.network.mtprotosender - INFO - Connecting to 91.108.56.159:443/TcpFull...
+2021-09-21 21:08:43,957 - main - INFO - (core4) Start task id 175875 - id 234500.
+2021-09-21 21:08:43,958 - telethon.network.mtprotosender - INFO - Connecting to 91.108.56.159:443/TcpFull...
+2021-09-21 21:08:44,025 - telethon.network.mtprotosender - INFO - Connection to 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:08:44,026 - telethon.network.mtprotosender - INFO - Connection to 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:08:44,027 - telethon.network.mtprotosender - INFO - Connection to 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:08:44,029 - telethon.network.mtprotosender - INFO - Connection to 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:08:47,445 - main - INFO - core3 0.0%.
+2021-09-21 21:08:48,260 - main - INFO - core1 0.0%.
+2021-09-21 21:08:49,367 - main - INFO - core2 0.0%.
+2021-09-21 21:08:59,377 - main - INFO - core4 0.0%.
+2021-09-21 21:09:44,056 - main - INFO - core2 5.0%.
+2021-09-21 21:10:09,647 - main - INFO - core1 5.0%.
+2021-09-21 21:10:30,020 - main - INFO - core3 5.0%.
+2021-09-21 21:10:33,322 - main - INFO - core2 10.0%.
+2021-09-21 21:10:46,255 - telethon.network.mtprotosender - INFO - Closing current connection to begin reconnect...
+2021-09-21 21:10:46,256 - telethon.network.mtprotosender - INFO - Connecting to 91.108.56.159:443/TcpFull...
+2021-09-21 21:10:46,324 - telethon.network.mtprotosender - INFO - Connection to 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:11:27,272 - main - INFO - core2 15.0%.
+2021-09-21 21:11:42,100 - main - INFO - core3 10.0%.
+2021-09-21 21:12:05,602 - main - INFO - core4 5.0%.
+2021-09-21 21:12:08,165 - main - INFO - core1 10.0%.
+2021-09-21 21:12:29,336 - main - INFO - core2 20.0%.
+2021-09-21 21:12:47,033 - main - INFO - core3 15.0%.
+2021-09-21 21:13:18,005 - main - INFO - core4 10.0%.
+2021-09-21 21:13:19,543 - main - INFO - core2 25.0%.
+2021-09-21 21:13:50,592 - main - INFO - core1 15.0%.
+2021-09-21 21:14:10,941 - main - INFO - core3 20.0%.
+2021-09-21 21:14:27,312 - main - INFO - core2 30.0%.
+2021-09-21 21:14:33,933 - main - INFO - core4 15.0%.
+2021-09-21 21:15:11,478 - main - INFO - core1 20.0%.
+2021-09-21 21:15:43,027 - main - INFO - core2 35.0%.
+2021-09-21 21:15:47,312 - main - INFO - core3 25.0%.
+2021-09-21 21:15:50,699 - main - INFO - core4 20.0%.
+2021-09-21 21:16:58,145 - main - INFO - core1 25.0%.
+2021-09-21 21:16:58,915 - main - INFO - core2 40.0%.
+2021-09-21 21:17:12,929 - main - INFO - core4 25.0%.
+2021-09-21 21:17:23,993 - main - INFO - core3 30.0%.
+2021-09-21 21:18:07,662 - main - INFO - core2 45.0%.
+2021-09-21 21:18:28,811 - main - INFO - core1 30.0%.
+2021-09-21 21:18:48,984 - main - INFO - core4 30.0%.
+2021-09-21 21:18:50,743 - main - INFO - core3 35.0%.
+2021-09-21 21:19:19,802 - main - INFO - core2 49.99%.
+2021-09-21 21:20:03,253 - main - INFO - core3 40.0%.
+2021-09-21 21:20:25,311 - main - INFO - core1 35.0%.
+2021-09-21 21:20:29,796 - main - INFO - core4 35.0%.
+2021-09-21 21:20:34,506 - main - INFO - core2 54.99%.
+2021-09-21 21:21:42,855 - main - INFO - core3 45.0%.
+2021-09-21 21:22:00,229 - main - INFO - core2 59.99%.
+2021-09-21 21:22:10,418 - main - INFO - core1 40.0%.
+2021-09-21 21:22:15,929 - main - INFO - core4 40.0%.
+2021-09-21 21:23:19,234 - main - INFO - core2 64.99%.
+2021-09-21 21:23:21,524 - main - INFO - core3 49.99%.
+2021-09-21 21:23:52,111 - main - INFO - core4 44.99%.
+2021-09-21 21:24:22,710 - main - INFO - core1 45.0%.
+2021-09-21 21:24:50,148 - main - INFO - core2 69.99%.
+2021-09-21 21:25:09,890 - main - INFO - core3 54.99%.
+2021-09-21 21:25:30,740 - main - INFO - core4 49.99%.
+2021-09-21 21:26:14,573 - main - INFO - core2 74.99%.
+2021-09-21 21:26:18,400 - main - INFO - core1 49.99%.
+2021-09-21 21:26:50,642 - main - INFO - core3 59.99%.
+2021-09-21 21:27:05,310 - main - INFO - core4 54.99%.
+2021-09-21 21:27:31,488 - main - INFO - core2 79.99%.
+2021-09-21 21:27:52,041 - main - INFO - core1 54.99%.
+2021-09-21 21:28:37,918 - main - INFO - core3 64.99%.
+2021-09-21 21:28:46,825 - main - INFO - core4 59.99%.
+2021-09-21 21:28:58,989 - main - INFO - core2 84.99%.
+2021-09-21 21:29:49,501 - main - INFO - core1 59.99%.
+2021-09-21 21:30:10,907 - main - INFO - core3 69.99%.
+2021-09-21 21:30:23,926 - main - INFO - core4 64.99%.
+2021-09-21 21:30:34,834 - main - INFO - core2 89.99%.
+2021-09-21 21:30:40,599 - telethon.network.mtprotosender - INFO - Disconnecting from 91.108.56.159:443/TcpFull...
+2021-09-21 21:30:40,600 - telethon.network.mtprotosender - INFO - Disconnection from 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:30:41,230 - main - INFO - (core2) Task id 58625 - id 117249 is finish.
+2021-09-21 21:31:30,350 - main - INFO - core1 64.99%.
+2021-09-21 21:31:48,353 - main - INFO - core3 74.99%.
+2021-09-21 21:32:15,474 - main - INFO - core4 69.99%.
+2021-09-21 21:33:09,975 - main - INFO - core1 69.99%.
+2021-09-21 21:33:29,184 - main - INFO - core3 79.99%.
+2021-09-21 21:34:09,945 - main - INFO - core4 74.99%.
+2021-09-21 21:34:55,478 - main - INFO - core1 74.99%.
+2021-09-21 21:35:31,182 - main - INFO - core3 84.99%.
+2021-09-21 21:36:02,492 - main - INFO - core4 79.99%.
+2021-09-21 21:36:11,238 - telethon.network.mtprotosender - INFO - Disconnecting from 91.108.56.159:443/TcpFull...
+2021-09-21 21:36:11,238 - telethon.network.mtprotosender - INFO - Disconnection from 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:36:11,823 - main - INFO - (core3) Task id 117250 - id 175874 is finish.
+2021-09-21 21:36:37,681 - main - INFO - core1 79.99%.
+2021-09-21 21:37:41,667 - main - INFO - core4 84.99%.
+2021-09-21 21:38:25,367 - telethon.network.mtprotosender - INFO - Disconnecting from 91.108.56.159:443/TcpFull...
+2021-09-21 21:38:25,367 - telethon.network.mtprotosender - INFO - Disconnection from 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:38:26,011 - main - INFO - (core4) Task id 175875 - id 234500 is finish.
+2021-09-21 21:38:46,936 - main - INFO - core1 84.99%.
+2021-09-21 21:40:15,899 - main - INFO - core1 89.99%.
+2021-09-21 21:40:20,002 - telethon.network.mtprotosender - INFO - Disconnecting from 91.108.56.159:443/TcpFull...
+2021-09-21 21:40:20,003 - telethon.network.mtprotosender - INFO - Disconnection from 91.108.56.159:443/TcpFull complete!
+2021-09-21 21:40:20,681 - main - INFO - (core1) Task id 0 - id 58624 is finish.

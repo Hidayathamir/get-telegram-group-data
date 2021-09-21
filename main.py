@@ -85,7 +85,9 @@ async def iter_messages(
             await extract_data_from_message(message), ignore_index=True
         )
         if (index - min_id) % length == 0:
-            logger.info(f"({session_name}) at {index}.")
+            logger.info(
+                f"{session_name} {round((index - min_id) / (max_id-min_id) * 100,2)}%."
+            )
         index += 1
 
     df = preprocess(df)
