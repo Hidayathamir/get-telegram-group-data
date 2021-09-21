@@ -27,7 +27,7 @@ With these project you can get data in csv file from your telegram group. What k
     python3 show_latest_id.py
     ```
     session file `core4.session` will be created in your directory. Input your phone number and login code from telegram. After finish `show_latest_id.py` will print latest message id in your group.
-5. Do step 2 & 3 with different session file name, use session file name `core1`, `core2`, and `core3`. Now you have 4 session file name.
+5. Do step 3 & 4 with different session file name, use session file name `core1`, `core2`, and `core3`. Now you have 4 session file name.
     ```
     core1.session
     core2.session
