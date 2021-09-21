@@ -30,7 +30,7 @@ def run_main_in_multiprocess(
     session_name: List[str],
 ) -> None:
     min_ids, max_ids = split_range_id_according_to_number_of_core(
-        range(min_id, max_id + 1), num_of_core=4
+        range(min_id, max_id + 1), num_of_core=len(session_name)
     )
     processes = []
 
@@ -62,7 +62,7 @@ if __name__ == "__main__":
         environ = yaml.safe_load(yaml_file)
 
     # create your seassion first and use it in here
-    # i have 4 core, so i create 4 seassion with defferent name
+    # i have 4 core, so i create 4 seassion with different name
     # in my case, i have
     # core1.session
     # core2.session
