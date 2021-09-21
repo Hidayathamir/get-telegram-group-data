@@ -71,7 +71,7 @@ if __name__ == "__main__":
     run_main_in_multiprocess(
         session_name=["core1", "core2", "core3", "core4"],
         api_id=environ["api_id"],
-        api_hash=environ["api_has"],
+        api_hash=environ["api_hash"],
         group_link="https://t.me/pythonID",
         min_id=234438,
         max_id=234500,
