@@ -26,8 +26,8 @@ With these project you can get data in csv file from your telegram group. What k
     ```
     python3 show_latest_id.py
     ```
-    session file `core4.session` will be created in your directory. Input your phone number and login code from telegram.After finish `show_latest_id.py` will print latest id message in your group.
-5. Do step 2 & 3 with defferent session file name, use session file name `core1`, `core2`, and `core3`. Now you have 4 session file name.
+    session file `core4.session` will be created in your directory. Input your phone number and login code from telegram. After finish `show_latest_id.py` will print latest message id in your group.
+5. Do step 2 & 3 with different session file name, use session file name `core1`, `core2`, and `core3`. Now you have 4 session file name.
     ```
     core1.session
     core2.session
@@ -45,8 +45,8 @@ With these project you can get data in csv file from your telegram group. What k
         max_id=234500,
     )
     ```
-    `session_name` is your 4 session file. `api_id` & `api_hash` you got from step 1. `group_link` is your telegram group link (in step 2). `min_id=0` mean we will get data from the first message in your group. `max_id=234500` is `max_id` message that we want to get, for me it's around 234429 so i round up to 234500.
-7. Run run.py
+    `session_name` is your 4 session file. `api_id` & `api_hash` you got from step 1. `group_link` is your telegram group link (in step 2). `min_id=0` mean we will get data from the first message in your group. `max_id=234500` is `max_id` message (your latest message id in step 4) that we want to get, for me it's around 234429 so i round up to 234500.
+7. Run `run.py`
     ```
     python3 run.py
     ```
