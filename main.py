@@ -1,8 +1,17 @@
+import logging
 from typing import Any, Dict
 from telethon import TelegramClient
 from telethon.tl.patched import Message
 import pandas as pd
 import yaml
+
+
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
+)
+
+logger = logging.getLogger(__name__)
 
 
 async def extract_data_from_message(message: Message) -> Dict[str, Any]:
@@ -59,6 +68,7 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 async def iter_messages(
     client: TelegramClient,
     target_username: str,
+    session_name: str,
     min_id: int = 0,
     max_id: int = 0,
 ) -> pd.DataFrame:
@@ -66,12 +76,17 @@ async def iter_messages(
     max_id += 1
     df = pd.DataFrame()
 
+    length = (max_id - min_id) // 20
+    index = min_id
     async for message in client.iter_messages(
         target_username, reverse=True, min_id=min_id, max_id=max_id
     ):
         df = df.append(
             await extract_data_from_message(message), ignore_index=True
         )
+        if (index - min_id) % length == 0:
+            logger.info(f"({session_name}) at {index}.")
+        index += 1
 
     df = preprocess(df)
     return df
@@ -87,13 +102,15 @@ def main(
 ) -> None:
     group_link = group_link.split("/")[-1]
     client = TelegramClient(session_name, api_id, api_hash)
+    logger.info(f"({session_name}) Start task id {min_id} - id {max_id}.")
     with client:
         df = client.loop.run_until_complete(
-            iter_messages(client, group_link, min_id, max_id)
+            iter_messages(client, group_link, session_name, min_id, max_id)
         )
 
     csv_name = f"{group_link}-{min_id}-{max_id}.csv"
     df.to_csv(csv_name, index=False)
+    logger.info(f"({session_name}) Task id {min_id} - id {max_id} is finish.")
 
 
 if __name__ == "__main__":

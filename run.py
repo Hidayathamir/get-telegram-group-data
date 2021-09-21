@@ -73,6 +73,6 @@ if __name__ == "__main__":
         api_id=environ["api_id"],
         api_hash=environ["api_hash"],
         group_link="https://t.me/pythonID",
-        min_id=234438,
-        max_id=234500,
+        min_id=0,
+        max_id=240000,
     )
